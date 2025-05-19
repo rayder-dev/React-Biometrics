@@ -231,7 +231,9 @@ export function LoginForm({ onSuccess }) {
             <Separator className="w-full" />
           </div>
           <div className="relative flex justify-center text-xs uppercase">
-            <span className="bg-white px-2 text-slate-500">or</span>
+            <span className="bg-white px-2 text-slate-500">
+              Secure Authentication
+            </span>
           </div>
         </div>
 
@@ -241,7 +243,7 @@ export function LoginForm({ onSuccess }) {
               <Fingerprint className="h-5 w-5 text-indigo-600" />
             </div>
             <div className="text-sm">
-              <p className="font-medium">Use Passkey Instead</p>
+              <p className="font-medium">Biometric Authentication</p>
               <p className="text-slate-500 text-xs">
                 Sign in with your registered fingerprint
               </p>
