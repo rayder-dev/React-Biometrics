@@ -9,7 +9,8 @@ A modern biometric authentication system built with **WebAuthn**, **React + Vite
 ## 🚀 Features
 
 - WebAuthn-based biometric authentication
-- React front-end powered by Vite
+- React.js front-end powered by Vite
+- Express.js backend for API handling
 - Tailwind CSS for styling
 - UI components with Shadcn
 - Full-stack setup with client and server
