@@ -38,7 +38,7 @@ export default function LoginPage() {
                 </Link>
               </Button>
               <CardTitle className="text-center flex-1 text-xl font-semibold">
-                Sign in to SecureID
+                Sign in to FingerMe
               </CardTitle>
               <div className="w-8"></div>
             </div>

@@ -20,7 +20,7 @@ export default function HomePage() {
           </div>
           <h1 className="text-3xl font-bold text-slate-900 mb-2">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-indigo-600">
-              SecureID
+              FingerMe
             </span>
           </h1>
           <p className="text-slate-600">Biometric authentication made simple</p>
