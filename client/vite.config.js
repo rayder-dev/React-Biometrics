@@ -10,5 +10,4 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // Remove the CSS configuration from here - it will use postcss.config.js instead
 });
