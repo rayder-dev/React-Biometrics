@@ -34,7 +34,7 @@ export default function DashboardPage() {
 
   const handleLogout = () => {
     localStorage.removeItem("userData");
-    toast.success("You have been successfully logged out.");
+    toast.info("You have been successfully logged out.");
     navigate("/");
   };
 
