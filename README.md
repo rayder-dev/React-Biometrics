@@ -18,23 +18,42 @@ A modern biometric authentication system built with **WebAuthn**, **React + Vite
 
 ### 1️⃣ Clone the Repository
 
-```sh
+```bash
 git clone https://github.com/yourusername/react-biometrics.git
 cd react-biometrics
+```
 
-2️⃣ Setup Environment Variables
-Create a .env file in both client and server directories and configure it accordingly.
+### 2️⃣ Setup Environment Variables
 
-3️⃣ Run Frontend
-sh
+```bash
+Create a .env file in client directory:
+
+VITE_REACT_APP_BACKEND_BASEURL=http://localhost:3001
+
+
+Create a .env file in server directory:
+
+NODE_ENV=development
+FRONTEND_URL=http://localhost:5173
+PORT=3001
+```
+
+### 3️⃣ Run Frontend
+
+```bash
 cd client
 npm install
 npm run dev
-4️⃣ Run Backend
-sh
+```
+
+### 4️⃣ Run Backend
+
+```bash
 cd server
 npm install
 npm run dev
+```
+
 📜 Technologies Used
 WebAuthn – Secure biometric authentication
 
@@ -49,4 +68,3 @@ Feel free to open an issue or submit a pull request!
 
 📄 License
 MIT License
-```
