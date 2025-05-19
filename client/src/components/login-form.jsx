@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Fingerprint, Loader2, Mail } from "lucide-react";
 import { toast } from "sonner";
 import { Separator } from "@/components/ui/separator";
+import { arrayBufferToBase64, base64ToArrayBuffer } from "@/lib/helpers";
 
 export function LoginForm({ onSuccess }) {
   const [email, setEmail] = useState("");
@@ -151,26 +152,6 @@ export function LoginForm({ onSuccess }) {
     } finally {
       setLoading(false);
     }
-  };
-
-  // Helper function to convert ArrayBuffer to Base64
-  const arrayBufferToBase64 = (buffer) => {
-    const bytes = new Uint8Array(buffer);
-    let binary = "";
-    for (let i = 0; i < bytes.byteLength; i++) {
-      binary += String.fromCharCode(bytes[i]);
-    }
-    return btoa(binary);
-  };
-
-  // Helper function to convert Base64 to ArrayBuffer
-  const base64ToArrayBuffer = (base64) => {
-    const binary = atob(base64);
-    const bytes = new Uint8Array(binary.length);
-    for (let i = 0; i < binary.length; i++) {
-      bytes[i] = binary.charCodeAt(i);
-    }
-    return bytes.buffer;
   };
 
   if (loginStep === "biometric") {

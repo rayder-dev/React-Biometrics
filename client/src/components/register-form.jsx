@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Fingerprint, Loader2, Mail, User } from "lucide-react";
 import { toast } from "sonner";
 import { Separator } from "@/components/ui/separator";
+import { arrayBufferToBase64 } from "@/lib/helpers";
 
 export function RegisterForm({ onSuccess }) {
   const [email, setEmail] = useState("");
@@ -142,16 +143,6 @@ export function RegisterForm({ onSuccess }) {
     } finally {
       setLoading(false);
     }
-  };
-
-  // Helper function to convert ArrayBuffer to Base64
-  const arrayBufferToBase64 = (buffer) => {
-    const bytes = new Uint8Array(buffer);
-    let binary = "";
-    for (let i = 0; i < bytes.byteLength; i++) {
-      binary += String.fromCharCode(bytes[i]);
-    }
-    return btoa(binary);
   };
 
   if (registrationStep === "biometric") {
