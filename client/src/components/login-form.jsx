@@ -25,9 +25,9 @@ export function LoginForm({ onSuccess }) {
     try {
       // Check if user exists
       const response = await fetch(
-        `http://localhost:3001/api/users/check?email=${encodeURIComponent(
-          email
-        )}`
+        `${
+          import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+        }/api/users/check?email=${encodeURIComponent(email)}`
       );
 
       if (!response.ok) {
@@ -59,9 +59,9 @@ export function LoginForm({ onSuccess }) {
 
       // Get credential info from server
       const infoResponse = await fetch(
-        `http://localhost:3001/api/credentials/get-info?email=${encodeURIComponent(
-          email
-        )}`
+        `${
+          import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+        }/api/credentials/get-info?email=${encodeURIComponent(email)}`
       );
 
       if (!infoResponse.ok) {
@@ -113,7 +113,9 @@ export function LoginForm({ onSuccess }) {
 
         // Verify with server
         const verifyResponse = await fetch(
-          "http://localhost:3001/api/credentials/verify",
+          `${
+            import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+          }/api/credentials/verify`,
           {
             method: "POST",
             headers: {

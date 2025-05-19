@@ -27,13 +27,16 @@ export function RegisterForm({ onSuccess }) {
 
     try {
       // First create the user in the backend
-      const response = await fetch("http://localhost:3001/api/users/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, name }),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/users/register`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, name }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to register user");
@@ -101,7 +104,9 @@ export function RegisterForm({ onSuccess }) {
 
         // Send credential to server
         const response = await fetch(
-          "http://localhost:3001/api/credentials/register",
+          `${
+            import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+          }/api/credentials/register`,
           {
             method: "POST",
             headers: {
