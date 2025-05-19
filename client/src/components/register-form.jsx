@@ -131,7 +131,8 @@ export function RegisterForm({ onSuccess }) {
 
         // Store user data in localStorage (in a real app, you'd use a more secure method)
         localStorage.setItem("userData", JSON.stringify(userData));
-        toast.success("Fingerprint registered successfully");
+
+        // toast.success("Fingerprint registered successfully");
 
         if (onSuccess) onSuccess();
       }

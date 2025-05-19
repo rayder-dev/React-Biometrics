@@ -141,7 +141,7 @@ export function LoginForm({ onSuccess }) {
         // Store user data in localStorage (in a real app, you'd use a more secure method)
         localStorage.setItem("userData", JSON.stringify(userData));
 
-        toast.success("Authentication successful");
+        // toast.success("Authentication successful");
 
         if (onSuccess) onSuccess();
       }
