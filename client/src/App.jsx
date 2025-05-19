@@ -14,7 +14,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
-      <Toaster position="top-center" />
+      <Toaster richColors position="top-center" />
     </Router>
   );
 }
