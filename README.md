@@ -19,7 +19,7 @@ A modern biometric authentication system built with **WebAuthn**, **React + Vite
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/react-biometrics.git
+git clone https://github.com/rayder-dev/React-Biometrics.git
 cd react-biometrics
 ```
 
