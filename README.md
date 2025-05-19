@@ -59,7 +59,7 @@ WebAuthn – Secure biometric authentication
 
 React + Vite – Fast front-end development
 
-Express.js – Lightweight and flexible Node.js
+Express – Lightweight and flexible Node.js
 
 Tailwind CSS – Utility-first styling
 
