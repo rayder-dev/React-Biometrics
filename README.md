@@ -13,7 +13,7 @@ A modern biometric authentication system built with **WebAuthn**, **React + Vite
 - Express.js backend for API handling
 - Tailwind CSS for styling
 - UI components with Shadcn
-- Full-stack setup with client and server
+- Fullstack mono-repo setup with client and server
 
 ## 🛠 Installation
 
@@ -26,14 +26,13 @@ cd react-biometrics
 
 ### 2️⃣ Setup Environment Variables
 
-```bash
 Create a .env file in client directory:
-
+```bash
 VITE_REACT_APP_BACKEND_BASEURL=http://localhost:3001
-
+```
 
 Create a .env file in server directory:
-
+```bash
 NODE_ENV=development
 FRONTEND_URL=http://localhost:5173
 PORT=3001
@@ -56,6 +55,7 @@ npm run dev
 ```
 
 📜 Technologies Used
+
 WebAuthn – Secure biometric authentication
 
 React + Vite – Fast front-end development
